@@ -1,6 +1,6 @@
 targetScope = 'subscription'
 
-param location string = 'East US'
+param location string = resourceGroup().location
 param resourceName string = 'resourceGroupLab132'
 
 resource newRg 'Microsoft.Resources/resourceGroups@2022-09-01' = {
