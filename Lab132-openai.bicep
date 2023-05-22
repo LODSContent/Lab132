@@ -2,7 +2,7 @@
 param accountName string = 'openAI-${uniqueString(resourceGroup().id)}'
 
 @description('Location for all resources.')
-param location string
+param location string = resourceGroup().location
 
 @allowed([
   'S0'
